@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillSwap</title>
+    <title>SkillHub</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -12,21 +12,24 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
+
 <body>
 
     <!-- NAVBAR -->
 
-    <header class="navbar">
+   <header class="navbar">
 
-        <div class="logo">
-            SkillSwap
-        </div>
+    <div class="logo">
+        SkillHub
+    </div>
+
+    <i class="fa-solid fa-bars menu-btn"></i>
 
         <nav>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="signup.html">Join</a></li>
+                <li><a href="#" class="signup-link">Join</a></li>
             </ul>
         </nav>
 
@@ -36,11 +39,11 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
 
-            <a href="signup.html" class="login-btn">
+            <a href="#" class="login-btn">
                 Login
             </a>
 
-            <a href="signup.html" class="start-btn">
+            <a href="#" class="start-btn signup-link">
                 Get Started
             </a>
 
@@ -65,7 +68,7 @@
 
         <div class="hero-buttons">
 
-            <a href="signup.html" class="primary-btn">
+            <a href="#" class="primary-btn signup-link">
                 Join Now
             </a>
 
@@ -76,12 +79,28 @@
         </div>
 
     </section>
+<section class="stats">
 
+<div>
+<h3>10K+</h3>
+<p>Students</p>
+</div>
+
+<div>
+<h3>500+</h3>
+<p>Skills</p>
+</div>
+
+<div>
+<h3>25K+</h3>
+<p>Matches</p>
+</div>
+
+</section>
     <!-- FEATURES -->
 
     <section id="features" class="features">
-
-    <h2>Why Choose SkillSwap?</h2>
+  <h2>Why Choose SkillSwap?</h2>
 
     <div class="features-grid">
 
@@ -136,25 +155,18 @@
     </div>
 
 </section>
-
-    <!-- HOW IT WORKS -->
-
-    <section id="how-it-works" class="roadmap-section">
+  <section id="how-it-works" class="roadmap-section">
 
         <h2>How SkillSwap Works</h2>
 
         <p class="roadmap-subtitle">
-            Follow the roadmap and start exchanging knowledge.
+            Follow the steps to start exchanging knowledge.
         </p>
 
         <div class="roadmap-container">
 
-
-            <div id="plane">
-                ✈️
-            </div>
-
-            <div class="road-card left">
+            <div class="road-card">
+                <div class="step-number">01</div>
                 <i class="fa-solid fa-user-plus"></i>
                 <h3>Create Your Profile</h3>
                 <p>
@@ -162,48 +174,94 @@
                 </p>
             </div>
 
-            <div class="road-card right">
+            <div class="road-card">
+                 <div class="step-number">02</div>
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <h3>Explore Skill Partners</h3>
+                <h3>Explore Partners</h3>
                 <p>
-                    Browse user profiles and discover individuals whose expertise matches your learning interests.
+                     Browse user profiles and discover individuals whose expertise matches your learning interests.
                 </p>
             </div>
 
-            <div class="road-card left">
+            <div class="road-card">
+                 <div class="step-number">03</div>
                 <i class="fa-solid fa-paper-plane"></i>
-                <h3>Send Connection Request</h3>
+                <h3>Send Request</h3>
                 <p>
-                    Connect with potential learning partners by sending a skill exchange request.
+                     Connect with potential learning partners by sending a skill exchange request.
                 </p>
             </div>
 
-            <div class="road-card right">
+            <div class="road-card">
+                 <div class="step-number">04</div>
                 <i class="fa-solid fa-comments"></i>
-                <h3>Communicate & Plan</h3>
+                <h3>Communicate</h3>
                 <p>
-                   
-Use the built-in messaging system to discuss goals, schedules, and learning expectations.
+                    Use the built-in messaging system to discuss goals, schedules, and learning expectations.
                 </p>
             </div>
 
-            <div class="road-card left">
+            <div class="road-card">
+                 <div class="step-number">05</div>
                 <i class="fa-solid fa-book-open"></i>
-                <h3>Learn & Teach Together</h3>
+                <h3>Learn & Teach</h3>
                 <p>
-                    Exchange knowledge, practice new skills, and support each other’s growth through collaborative learning.
+                     Exchange knowledge, practice new skills, and support each other’s growth through collaborative learning.
                 </p>
             </div>
-
 
         </div>
 
     </section>
-
-  
     <footer class="footer">
     <p>© 2026 SkillSwap. All Rights Reserved.</p>
 </footer>
-  <script src="script.js"></script>
+  <!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+
+    <div class="modal-box">
+
+        <span id="closeModal" class="close-btn">&times;</span>
+
+        <h2>Welcome to SkillSwap!</h2>
+        <p id="authModeText">Sign In</p>
+
+        <form id="authForm">
+            <input id="nameInput" type="text" placeholder="Full name" autocomplete="name">
+            <input id="emailInput" type="email" placeholder="Email" autocomplete="email" required>
+            <input id="passwordInput" type="password" placeholder="Password" autocomplete="current-password" required>
+
+            <a href="#" class="forgot">
+    Forgot your password?
+</a>
+
+            <button id="authSubmit" class="primary-btn" type="submit">Sign In</button>
+        </form>
+
+        <!-- DIVIDER -->
+        <div class="divider">
+            <span>or</span>
+        </div>
+
+        <!-- GOOGLE BUTTON -->
+        <button class="google-btn" id="googleLogin">
+            <img src="https://developers.google.com/identity/images/g-logo.png">
+            Sign in with Google
+        </button>
+
+        <p class="switch-text" id="authSwitchText">
+            Don’t have an account yet?
+        </p>
+
+        <button id="authSwitch" class="secondary-btn" type="button">
+            Sign Up
+        </button>
+
+    </div>
+
+</div>
+  <div id="toast"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
