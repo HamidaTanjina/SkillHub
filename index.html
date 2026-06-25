@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+   <header class="navbar">
+
+    <div class="logo">
+        SkillHub
+    </div>
+
+    <i class="fa-solid fa-bars menu-btn"></i>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#" class="signup-link">Join</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+
+            <button id="themeToggle" class="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="#" class="login-btn">
+                Login
+            </a>
+
+            <a href="#" class="start-btn signup-link">
+                Get Started
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>
+            Exchange Skills.<br>
+            Learn Together.
+        </h1>
+
+        <p>
+            The ultimate collaborative learning platform where students
+            and professionals exchange knowledge, build connections,
+            and grow together.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="primary-btn signup-link">
+                Join Now
+            </a>
+
+            <a href="#features" class="secondary-btn">
+                Learn More
+            </a>
+
+        </div>
+
+    </section>
+<section class="stats">
+
+<div>
+<h3>10K+</h3>
+<p>Students</p>
+</div>
+
+<div>
+<h3>500+</h3>
+<p>Skills</p>
+</div>
+
+<div>
+<h3>25K+</h3>
+<p>Matches</p>
+</div>
+
+</section>
+    <!-- FEATURES -->
+
+    <section id="features" class="features">
+  <h2>Why Choose SkillSwap?</h2>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <i class="fa-solid fa-coins"></i>
+            <h3>Learn for Free</h3>
+            <p>
+                No payments or subscriptions required. Exchange skills and learn without spending money.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Teach What You Know</h3>
+            <p>
+                Share your knowledge and expertise while helping others improve their skills.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Meet Like-Minded People</h3>
+            <p>
+                Connect with people who share your interests, passions, and learning goals.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Mutual Growth</h3>
+            <p>
+                Both participants benefit from the exchange, creating a win-win learning experience.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-infinity"></i>
+            <h3>Endless Possibilities</h3>
+            <p>
+                Explore a wide variety of skills—from coding and design to cooking, music, languages, and more.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Build Confidence & Experience</h3>
+            <p>
+                Practice your skills, gain real-world experience, and grow your confidence through meaningful interactions.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+  <section id="how-it-works" class="roadmap-section">
+
+        <h2>How SkillSwap Works</h2>
+
+        <p class="roadmap-subtitle">
+            Follow the steps to start exchanging knowledge.
+        </p>
+
+        <div class="roadmap-container">
+
+            <div class="road-card">
+                <div class="step-number">01</div>
+                <i class="fa-solid fa-user-plus"></i>
+                <h3>Create Your Profile</h3>
+                <p>
+                   Sign up and create your profile by adding the skills you can teach and the skills you want to learn.
+                </p>
+            </div>
+
+            <div class="road-card">
+                 <div class="step-number">02</div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Explore Partners</h3>
+                <p>
+                     Browse user profiles and discover individuals whose expertise matches your learning interests.
+                </p>
+            </div>
+
+            <div class="road-card">
+                 <div class="step-number">03</div>
+                <i class="fa-solid fa-paper-plane"></i>
+                <h3>Send Request</h3>
+                <p>
+                     Connect with potential learning partners by sending a skill exchange request.
+                </p>
+            </div>
+
+            <div class="road-card">
+                 <div class="step-number">04</div>
+                <i class="fa-solid fa-comments"></i>
+                <h3>Communicate</h3>
+                <p>
+                    Use the built-in messaging system to discuss goals, schedules, and learning expectations.
+                </p>
+            </div>
+
+            <div class="road-card">
+                 <div class="step-number">05</div>
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Learn & Teach</h3>
+                <p>
+                     Exchange knowledge, practice new skills, and support each other’s growth through collaborative learning.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+    <p>© 2026 SkillSwap. All Rights Reserved.</p>
+</footer>
+  <!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+
+    <div class="modal-box">
+
+        <span id="closeModal" class="close-btn">&times;</span>
+
+        <h2>Welcome to SkillSwap!</h2>
+        <p id="authModeText">Sign In</p>
+
+        <form id="authForm">
+            <input id="nameInput" type="text" placeholder="Full name" autocomplete="name">
+            <input id="emailInput" type="email" placeholder="Email" autocomplete="email" required>
+            <input id="passwordInput" type="password" placeholder="Password" autocomplete="current-password" required>
+
+            <a href="#" class="forgot">
+    Forgot your password?
+</a>
+
+            <button id="authSubmit" class="primary-btn" type="submit">Sign In</button>
+        </form>
+
+        <!-- DIVIDER -->
+        <div class="divider">
+            <span>or</span>
+        </div>
+
+        <!-- GOOGLE BUTTON -->
+        <button class="google-btn" id="googleLogin">
+            <img src="https://developers.google.com/identity/images/g-logo.png">
+            Sign in with Google
+        </button>
+
+        <p class="switch-text" id="authSwitchText">
+            Don’t have an account yet?
+        </p>
+
+        <button id="authSwitch" class="secondary-btn" type="button">
+            Sign Up
+        </button>
+
+    </div>
+
+</div>
+  <div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
